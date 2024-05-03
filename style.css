@@ -12,10 +12,6 @@ body{
 .sub-container1{
     width: 50%;
     height: 100vh;
-   /* padding-top: 160px; */
-   /* padding-bottom: 14%; */
-   /* padding-left: 150px; */
-   /* padding-right: 100px; */
    position: -webkit-sticky;
    position: sticky;
    top: 14%;
@@ -90,7 +86,6 @@ position: relative;
     align-items: center;
     color: white;
     z-index: 40;
-    /* cursor: pointer; */
 }
 
 .arrow svg{
@@ -101,7 +96,6 @@ position: relative;
 .slider-status{
     position: absolute;
     bottom: 10px;
-    /* background-color: crimson; */
     width: 60%;
     height: 30px;
     display: flex;
@@ -115,7 +109,8 @@ position: relative;
  width: 20px;
  height: 20px;
  background-color: white;
- /* background-color: #f79f38; */
+ cursor: pointer;
+
 }
 
 .sub-container1-mob{
