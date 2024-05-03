@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="flex-container">
+            <div class="sub-container1">
+                <div class="section-heading">
+                    <h1 class="heading_h1">Unser Team</h1>
+                    <p class="">
+                        Unsere Kanzlei vereint qualifizierte und engagierte Steuerfachangestellte. So gewährleisten wir
+                        unseren Mandanten eine kompetente und individuelle Betreuung. Davon profitieren Sie sowohl als
+                        Unternehmen, Selbstständige, Freiberufler oder Privatperson, unabhängig davon, welcher Branche
+                        Sie angehören.
+                    </p>
+                    <strong>Kompetent. Vertrauensvoll. Wertschätzend.</strong>
+                </div>
+            </div>
+
+
+            <div class="sub-container2">
+
+                <div class="arrow-container-left" onclick="prevSlide()">
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-left">
+                            <path d="m15 18-6-6 6-6" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="arrow-container-right" onclick="nextSlide()">
+                    <div class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="slider-status">
+                    <div class="dot dot0" onclick="dotClick(this)"></div>
+                    <div class="dot dot1" onclick="dotClick(this)"></div>
+                    <div class="dot dot2" onclick="dotClick(this)"></div>
+                    <div class="dot dot3" onclick="dotClick(this)"></div>
+                </div>
+
+            </div>
+
+            <!-- for Mobile screen -->
+            <div class="sub-container1-mob">
+                <div class="section-heading-mob">
+                    <h1 class="heading_h1-mob">Dei Team</h1>
+                    <p>
+                        Unsere Kanzlei vereint qualifizierte und engagierte Steuerfachangestellte. So gewährleisten wir
+                        unseren Mandanten eine kompetente und individuelle Betreuung. Davon profitieren Sie sowohl als
+                        Unternehmen, Selbstständige, Freiberufler oder Privatperson, unabhängig davon, welcher Branche
+                        Sie angehören.
+                    </p>
+                    <strong>Kompetent. Vertrauensvoll. Wertschätzend.</strong>
+                </div>
+            </div>
+            <!-- for Mobile screen End -->
+
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

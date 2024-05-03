@@ -1,0 +1,198 @@
+body{
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+
+}
+
+.sub-container1{
+    width: 50%;
+    height: 100vh;
+   /* padding-top: 160px; */
+   /* padding-bottom: 14%; */
+   /* padding-left: 150px; */
+   /* padding-right: 100px; */
+   position: -webkit-sticky;
+   position: sticky;
+   top: 14%;
+   bottom: 0;
+   overflow: hidden;
+}
+
+.section-heading{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    margin-top: 160px;
+    flex-direction: column;
+    /* margin-left: 150px; */
+}
+.heading_h1{
+    color: #363940;
+    text-transform: none;
+    flex: 0 auto;
+    font-size: 35px;
+    line-height: 38px;
+    padding-bottom: 0;
+}
+.section-heading p{
+    color: #54585f;
+    background-color: #efefef;
+    font-family: Lato_s, Arial, sans-serif;
+    line-height: 22px;
+    overflow: visible;
+   width: 68%;
+   max-width: 500px;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   unicode-bidi: isolate;
+}
+.section-heading strong{
+    color: #323438;
+  
+}
+
+.sub-container2{
+    width: 50%;
+    height: 100vh;
+background-image: url('./images/pic1.jpeg');
+background-position: 50%;
+background-size: cover;
+position: relative;
+/* transition:  700ms ease-in 0s; */
+}
+
+.arrow-container-left{
+   position: absolute;
+   left: 10px;
+   /* background-color: darkgoldenrod; */
+   height: 100%;
+   display: flex;
+   align-items: center;
+   color: white;
+   z-index: 4;
+   /* cursor: pointer; */
+}
+.arrow-container-right{
+    position: absolute;
+    right: 10px;
+    /* background-color: darkgoldenrod; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 40;
+    /* cursor: pointer; */
+}
+
+.arrow svg{
+    cursor: pointer;
+    user-select: none;
+}
+
+.slider-status{
+    position: absolute;
+    bottom: 10px;
+    /* background-color: crimson; */
+    width: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-status div{
+ width: 20px;
+ height: 20px;
+ background-color: white;
+ /* background-color: #f79f38; */
+}
+
+.sub-container1-mob{
+    display: none;
+}
+
+@media (min-width: 481px) and (max-width: 773px) {
+    .heading_h1{
+        font-size: 32px;
+    }
+    .section-heading p{
+       font-size: 12px;
+    }
+    .section-heading strong{
+        color: #323438;
+        font-size: 12px;
+        line-break: auto;
+        padding: 0 15px;
+    }
+}
+  
+
+@media(max-width:481px){
+    .flex-container{
+        display: grid;
+    }
+    .sub-container1{
+        display: none;
+    }
+    .sub-container2{
+        width: 100%;
+        height: 265px;
+    }
+
+    .sub-container1-mob{
+    height: fit-content;
+       padding: 60px 36px;
+       display: block;
+    }
+    
+    .section-heading{
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+        margin-top: 160px;
+        flex-direction: column;
+        font-family: Lato_s, Arial, sans-serif;
+        /* margin-left: 150px; */
+    }
+    .heading_h1-mob{
+        color: #54585f;
+        font-size: 2em;
+        font-weight: 600;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .section-heading-mob p{
+        color: #54585f;
+        background-color: #efefef;
+        font-size: 14px;
+        font-family: Lato_s, Arial, sans-serif;
+        line-height: 22px;
+        overflow: visible;
+       max-width: 500px;
+       margin-block-start: 1em;
+       margin-block-end: 1em;
+       margin-inline-start: 0px;
+       margin-inline-end: 0px;
+       unicode-bidi: isolate;
+    }
+    .section-heading-mob strong {
+        font-size: 14px;
+        color: #494d53;
+    }
+    
+}
